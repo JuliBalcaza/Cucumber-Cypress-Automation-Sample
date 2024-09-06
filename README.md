@@ -5,7 +5,6 @@ This repository contains a sample of my automation project, showcasing how I use
 
 ## Features Included
 Login Form Automation: Tests for various login scenarios using the Page Object Model.
-Try-It-Out Content: Automates testing for interactive content and ensures user interactions work as expected.
 
 ## Project Structure
 cypress/e2e/features/: Contains the feature files written in Gherkin syntax.
