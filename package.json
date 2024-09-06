@@ -1,0 +1,24 @@
+{
+  "name": "dowjones-automation-uat",
+  "version": "2.2.0",
+  "description": "Automation project for UAT testing in the context of DJDP platform migration, ensuring successful functionality and integration during the transition.",
+  "main": "index.js",
+  "scripts": {
+    "cypress:execution": "cypress run && npm run cucumber:report",
+    "cucumber:report": "npx multiple-cucumber-html-reporter --reportName 'Cucumber Report' --jsonDir=cucumber-json --reportPath=./cucumber-report && open ./cucumber-report.html",
+    "test:run": "npm install && npm run cypress:execution"
+  },
+  "keywords": [
+    "cypress"
+  ],
+  "author": "cucumber",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^12.17.4",
+    "esbuild": "^0.16.4",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "open": "^10.1.0"
+  }
+}
